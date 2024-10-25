@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+   
+    background-image: url('cumpleaños24.jpg'); /* Cambia esta ruta a la ubicación de tu foto */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue ;
+}
+
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 490px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;    
+    animation: colorChange 2s infinite;
+}
+h2 {
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 37px; /* Tamaño de la fuente */
+    background-clip: text; /* Para navegadores no WebKit */
+    animation: colorChange 2s infinite;
+}
+h3{
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    left: 700px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; /* Tamaño de la fuente */
+    background-clip: text; /* Para navegadores no WebKit */
+    animation: colorChange 2s infinite;
+}
+p {
+    position: absolute;
+    top: 380px;
+    left: 500px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 37px; /* Tamaño de la fuente */
+    background-clip: text; /* Para navegadores no WebKit */
+    animation: colorChange 2s infinite;
+}
+.foto-adicional {
+    position: absolute;
+    top: 150px;
+    left: 480px;
+    width: 150%; /* Ajusta el tamaño de la imagen */
+    max-width: 200px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+}
+.foto-adicional {
+    width: 150px; /* Ajusta según necesites */
+    transition: transform 0.5s; /* Transición suave */
+}
+.foto-adicional:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+.foto-adicional {
+    display: inline-block;
+    padding: 10px; /* Espacio para el borde */
+    border-radius: 15px; /* Bordes redondeados */
+    background: linear-gradient(90deg, #ffffff, #fff41a); /* Degradado del borde */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    animation: colorChange 2s infinite;
+}
+.foto-adicional img {
+    display: block; /* Para eliminar el espacio debajo de la imagen */
+    border-radius: 15px; /* Asegura que la imagen tenga bordes redondeados también */
+    width: 200px; /* Ajusta según necesites */
+}
+
+@keyframes colorChange {
+    0% { color: rgb(255, 255, 255); }
+    50% { color: rgb(243, 227, 0); }
+    100% { color: rgb(36, 255, 135); }
+}
+@keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.foto-adicional{
+    animation: zoom 3s infinite;
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.video-container {
+    animation: fade 2s forwards;
+}
